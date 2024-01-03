@@ -30,7 +30,7 @@ namespace NotificationChannelParser
         public static string GetTitleInput()
         {
             string output = "";
-            bool isValidTitle = true;
+            bool isValidTitle = false;
             do
             {
                 Console.Write("Enter a notification title: ");
@@ -53,7 +53,7 @@ namespace NotificationChannelParser
                     Console.WriteLine("Error: The notification title cannot be empty.");
                 }
 
-            } while (isValidTitle == true);
+            } while (isValidTitle == false);
 
             return output;
         }
