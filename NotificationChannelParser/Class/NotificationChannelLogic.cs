@@ -33,12 +33,7 @@ namespace NotificationChannelParser.Class
                 .GroupBy(match => match.Value)
                 .Select(group => group.First())
                 .ToList();
-
-            if (matches.Count < 1)
-            {
-                // Do something
-            }
-
+            
             return matchesList;
         }
 
